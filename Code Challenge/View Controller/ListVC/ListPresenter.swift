@@ -19,6 +19,13 @@ protocol ListViewProtocol: class {
   /// It saves data to Realm storage and updates CollectionView
   /// - Parameter data: [ResponseModel]
   func update(data: [ResponseModel])
+  
+  
+  /// To show Alert with message.
+  /// - Parameters:
+  ///   - title: String
+  ///   - message: String
+  func showAlert(title: String, message: String)
 }
 
 protocol ListPresenterProtocol: class {
@@ -27,6 +34,8 @@ protocol ListPresenterProtocol: class {
   func getAPIData()
 }
 
+/// It acts as medium between View and Interactor.
+/// 
 class ListPresenter {
   // MARK: Variables.
   weak var view: ListViewProtocol?
@@ -50,6 +59,7 @@ extension ListPresenter: ListPresenterProtocol {
         print(data)
         self?.view?.update(data: data)
       } else {
+        self?.view?.showAlert(title: "Alert", message: "No data found.")
         //Show Error
       }
     })

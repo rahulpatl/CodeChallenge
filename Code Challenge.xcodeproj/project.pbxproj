@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58157FFB2544070100A83489 /* AlertUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58157FFA2544070100A83489 /* AlertUtils.swift */; };
 		5828027A253EFDDA00E87DD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58280279253EFDDA00E87DD2 /* AppDelegate.swift */; };
 		5828027C253EFDDA00E87DD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5828027B253EFDDA00E87DD2 /* SceneDelegate.swift */; };
 		58280283253EFDE200E87DD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58280282253EFDE200E87DD2 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		0C679B87B09A82BAFFC5E6E4 /* Pods-Code Challenge-Code ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Code Challenge-Code ChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-Code Challenge-Code ChallengeUITests/Pods-Code Challenge-Code ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3E19626E9713D22E216EFA8A /* Pods-Code Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Code Challenge.debug.xcconfig"; path = "Target Support Files/Pods-Code Challenge/Pods-Code Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		58157FFA2544070100A83489 /* AlertUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtils.swift; sourceTree = "<group>"; };
 		58280276253EFDDA00E87DD2 /* Code Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Code Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58280279253EFDDA00E87DD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5828027B253EFDDA00E87DD2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 			children = (
 				58F2214D25417607000B1BB7 /* RealmUtils.swift */,
 				58F22152254176E1000B1BB7 /* Enums.swift */,
+				58157FFA2544070100A83489 /* AlertUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -501,6 +504,7 @@
 				58F221632541C20F000B1BB7 /* SplitVC.swift in Sources */,
 				58B0E0ED2540AAA100A6E324 /* ResponseModel.swift in Sources */,
 				58F2214E25417607000B1BB7 /* RealmUtils.swift in Sources */,
+				58157FFB2544070100A83489 /* AlertUtils.swift in Sources */,
 				586BEDC9253FB75700888927 /* DetailsCell.swift in Sources */,
 				58F22153254176E1000B1BB7 /* Enums.swift in Sources */,
 				5828027C253EFDDA00E87DD2 /* SceneDelegate.swift in Sources */,

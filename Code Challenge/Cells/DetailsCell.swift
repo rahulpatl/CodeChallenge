@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Collection cell contains necessary views to show text and image details.
 class DetailsCell: UICollectionViewCell {
   //MARK: Variables
   private var parentView = UIView()

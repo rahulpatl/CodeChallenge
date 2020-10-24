@@ -8,6 +8,7 @@
 import Foundation
 import Alamofire
 
+/// Interactor handles interactions between backend (API or Database) and Presenter.
 class ListInteractor {
   
   /// First try to fetch data from the Realm storage. If data is available in the storage, the handler captures the response.

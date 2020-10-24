@@ -8,6 +8,7 @@
 import Foundation
 import RealmSwift
 
+/// A singleton class to save and retrive data.
 class RealmUtils {
   //MARK: Variables
   
@@ -33,7 +34,7 @@ class RealmUtils {
   }
   
   /// It deletes all available data in the Realm storage.
-  func deleteAll() {
+  func removeAll() {
     try! realm.write {
       realm.deleteAll()
     }

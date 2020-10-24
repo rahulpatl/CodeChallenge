@@ -8,6 +8,11 @@
 import UIKit
 import SnapKit
 
+/// Following operations performed by the class.
+/// - Display list in *UICollectionView*.
+/// - Update UI of *UICollectionView* for different devices (iPhone and iPad)
+/// - Show *UIActivityIndicatorView* while fetching and displaying data.
+/// - Show an alert when data is not available.
 class ListVC: UIViewController {
   // MARK: Variables
   private var collectionView: UICollectionView!
@@ -101,7 +106,7 @@ class ListVC: UIViewController {
   /// - If device is iPad then updates DetailVC
   @objc private func refreshTapped() {
     activityIndicator(animate: true)
-    RealmUtils.shared.deleteAll()
+    RealmUtils.shared.removeAll()
     imagesCache.removeAllObjects()
     presenter?.getAPIData()
     if let delegate = listDelegate {
@@ -162,6 +167,12 @@ extension ListVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource
 
 // MARK: Presenter Protocol extension.
 extension ListVC: ListViewProtocol {
+  func showAlert(title: String, message: String) {
+    activityIndicator(animate: false)
+    update(data: [])
+    AlertUtils.shared.showAlert(with: title, message: message, target: self)
+  }
+  
   func update(data: [ResponseModel]) {
     model = data
   }

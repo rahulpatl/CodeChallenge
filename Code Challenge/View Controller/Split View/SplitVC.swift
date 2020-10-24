@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+/// Represent with split view(shows multiple screens.) for iPad.
 class SplitVC: UISplitViewController {
   //MARK: Variables
   private var detailsVC = DetailsVC()

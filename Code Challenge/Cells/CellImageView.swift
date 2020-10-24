@@ -9,7 +9,10 @@ import Foundation
 import UIKit
 import Alamofire
 
+/// It stores cached data with NSString and AnyObject as *Key* and *Value*.
 let imagesCache = NSCache<NSString, AnyObject>()
+
+/// Custom *UIImageView* to load image form the *URL* and store cache as well.
 class CellImageView: UIImageView {
   //MARK: Variables
   private var activityIndicator = UIActivityIndicatorView()
